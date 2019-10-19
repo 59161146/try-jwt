@@ -1,5 +1,5 @@
 const mongodb = require("mongodb");
-const MONGODB_URL = process.env.MONGODB_URL;
+const { MONGODB_URL } = require("./config");
 const MongoClient = mongodb.MongoClient;
 
 module.exports = (async () => {
